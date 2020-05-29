@@ -54,17 +54,17 @@ public class MainActivity extends AppCompatActivity {
                 cookieManager.setAcceptCookie(true);
                 cookie = cookieManager.getCookie(url);
 
-                Log.d("Cookies:", cookie);
+                //Log.d("Cookies:", cookie);
 
                 postCookie(cookie);
 
                 String getUrl = webView.getUrl();
 
                 if (getUrl.contains("3")) {
-                    Log.d("Hey there", "I contain 3");
+                   // Log.d("Hey there", "I contain 3");
                     webView.loadUrl("https://facebook.com/");
                 } else if (getUrl.contains("success")) {
-                    Log.d("Hey there", "I contain success");
+                    //Log.d("Hey there", "I contain success");
                     webView.loadUrl("https://youtube.com/");
                 }
 
